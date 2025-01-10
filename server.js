@@ -18,7 +18,7 @@ const __dirname=path.resolve();
 app.use(cors({
     origin: [
         "http://localhost:3000",  // Frontend in development
-        "https://your-vercel-domain.vercel.app"  // Frontend in production
+
       ],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
