@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
-const API = "http://localhost:5080/api/v1";
+const API = "https://shopsphere-c73p.onrender.com/api/v1";
 
 
 export default function useCategory(){
