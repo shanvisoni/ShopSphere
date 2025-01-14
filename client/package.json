@@ -24,19 +24,19 @@
     "react-toastify": "^10.0.6",
     "web-vitals": "^2.1.4"
   },
-   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
-  },
+ "devDependencies": {
+  "@babel/plugin-proposal-private-property-in-object": "^7.20.1"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "preinstall": "npx npm-force-resolutions"
+   "preinstall": "npx npm-force-resolutions || echo 'Force resolutions failed'"
   },
-   "resolutions": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
-  },
+  "resolutions": {
+  "@babel/plugin-proposal-private-property-in-object": "^7.20.1"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
