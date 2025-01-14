@@ -4,7 +4,7 @@ import { useCart } from '../context/cart'
 import Layout from '../component/layout/Layout'
 import { useSearch } from '../context/search'
 import { toast } from 'react-toastify'
-const API = "http://localhost:5080/api/v1";
+const API = "https://shopsphere-c73p.onrender.com/api/v1";
 
 const Search = () => {
   const navigate=useNavigate();
