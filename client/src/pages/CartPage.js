@@ -3,7 +3,7 @@ import { useCart } from '../context/cart'
 import { useAuth } from '../context/auth'
 import { useNavigate } from 'react-router-dom'
 import Layout from '../component/layout/Layout'
-const API = "http://localhost:5080/api/v1";
+const API = "https://shopsphere-c73p.onrender.com/api/v1";
 
 const CartPage = () => {
     const [cart,setCart]=useCart()
