@@ -6,7 +6,7 @@ import { Checkbox ,Radio} from 'antd'
 import { Prices } from '../component/Prices'
 import { useCart } from '../context/cart'
 import { toast } from 'react-toastify'
-const API = "http://localhost:5080/api/v1";
+const API = "https://shopsphere-c73p.onrender.com/api/v1";
 
 const HomePage = () => {
  const navigate=useNavigate();
