@@ -32,22 +32,7 @@ toast.error(data.message)
 }
 }
 
-//dekete category-------------
-// const handleDelete=async(pId)=>{
-// try {
-//   const {data} = await axios.delete(`/api/v1/category/delete-category/${pId}`)
-//   if(data.success){
-//     toast.success(`${name} is deleted`)
-//     getAllCategory();
-//   }
-//   else{
-// toast.error(data.message)
-//   }
-// } catch (error) {
-//   console.log(error)
-//   toast.error('Something went wrong in input form')
-// }
-// }
+
 
 //get all category 
   const getAllCategory=async()=>{

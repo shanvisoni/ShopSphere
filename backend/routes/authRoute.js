@@ -1,8 +1,8 @@
 import express, { Router } from 'express'
-import {forgotPasswordController, registerController, updateProfileController }from '../controllers/authController.js';
-import {loginController }from '../controllers/authController.js';
-import {testController }from '../controllers/authController.js';
-import {isAdmin, requireSignIn } from '../middlewares/authMiddleware.js';
+import {forgotPasswordController, registerController, updateProfileController }from '../backend/controllers/authController.js';
+import {loginController }from '../backend/controllers/authController.js';
+import {testController }from '../backend/controllers/authController.js';
+import {isAdmin, requireSignIn } from '../backend/middlewares/authMiddleware.js';
 
 const router=express.Router();
 

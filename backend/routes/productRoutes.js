@@ -1,8 +1,8 @@
 import express, { Router } from 'express'
 import formidable from 'express-formidable';
 
-import {isAdmin, requireSignIn } from '../middlewares/authMiddleware.js';
-import { deleteProductController,  getProductController, getSingleProductController, productCategoryController, productController, productCountController, productFiltersController, productListController, productPhotoController, relatedProductController, searchProductController, updateProductController } from '../controllers/productController.js';
+import {isAdmin, requireSignIn } from '../backend/middlewares/authMiddleware.js';
+import { deleteProductController,  getProductController, getSingleProductController, productCategoryController, productController, productCountController, productFiltersController, productListController, productPhotoController, relatedProductController, searchProductController, updateProductController } from '../backend/controllers/productController.js';
 
 const router=express.Router();
 

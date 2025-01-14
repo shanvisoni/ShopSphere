@@ -1,4 +1,4 @@
-import express from 'express';
+import  express from 'express'; // Assuming 'express' exports a default object
 import colors from 'colors';
 import dotenv from 'dotenv'
 import morgan from 'morgan';
@@ -7,13 +7,13 @@ import cors from 'cors'
 import authRoutes from './routes/authRoute.js'
 import categoryRoutes from './routes/categoryRoutes.js'
 import productRoutes from'./routes/productRoutes.js'
-import path from "path"
+
 
 dotenv.config();
 connectDB();
 
 const app=express()
-const __dirname=path.resolve();
+
 
 app.use(cors({
     origin: [
@@ -36,12 +36,9 @@ app.use('/api/v1/product',productRoutes);
 // app.get('/',(req,res)=>{
 //     res.send({msg:"welcome to ecommerce app"})
 // })
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-    });
-  }
+
+
+ 
 
 const PORT=process.env.PORT || 8000;
 
