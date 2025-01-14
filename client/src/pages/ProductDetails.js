@@ -4,7 +4,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { useCart } from '../context/cart'
 import { toast } from 'react-toastify'
-const API = "http://localhost:5080/api/v1";
+const API = "https://shopsphere-c73p.onrender.com/api/v1";
 
 const ProductDetails = () => {
     const params=useParams()
