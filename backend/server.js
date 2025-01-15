@@ -17,7 +17,7 @@ const app=express()
 
 app.use(cors({
     origin: [
-        "http://localhost:3000",  // Frontend in development
+        "https://shopsphere-1-client.onrender.com",  // Frontend in development
 
       ],
       methods: ["GET", "POST", "PUT", "DELETE"],
