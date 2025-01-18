@@ -65,7 +65,7 @@ const totalPrice=()=>{
     <div className='col-md-8'>
           <h4>{p.name}</h4>
           <p>{p.description.substring(0,30)}</p>
-          <p>Price: ${p.price} </p>
+          <p>Price: ₹{p.price} </p>
           <button className='btn btn-danger' onClick={()=> removeCartItem(p._id)}>Remove</button>
     </div>
     </div>
