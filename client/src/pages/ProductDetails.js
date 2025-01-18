@@ -110,13 +110,13 @@ console.log(data);
       />
       <div className="card-body" style={{ flex: "1" }}>
         {/* Product Name */}
-        <h5 className="card-title">$ {p.name}</h5>
+        <h5 className="card-title">{p.name}</h5>
         {/* Description with truncation */}
         <p className="card-text text-truncate" style={{ minHeight: "50px" }}>
           {p.description.substring(0, 30)}...
         </p>
         {/* Price */}
-        <p className="card-text">${p.price}</p>
+        <p className="card-text">₹{p.price}</p>
         {/* Buttons */}
         <div className="d-flex justify-content-between">
          
