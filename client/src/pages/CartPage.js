@@ -14,9 +14,9 @@ const totalPrice=()=>{
   try {
     let total=0;
     cart?.map((item)=> { total=total + item.price})
-    return total.toLocaleString("en-us",{
+    return total.toLocaleString("en-IN",{
       style:"currency",
-      currency:"USD",
+      currency:"INR",
     })
   } catch (error) {
    
